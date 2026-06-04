@@ -1,8 +1,6 @@
 package com.java.multiThreading;
 
 
-import com.java.collection_framework.Map.IdentityHashMapDemo;
-
 class Mythread1 extends Thread{
     public Mythread1 (String name){
         super(name);// giving name to the thread

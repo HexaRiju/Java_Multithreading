@@ -20,7 +20,7 @@ public class MyThread extends Thread {
         t1.start();
         System.out.println(t1.getState());// Runnable state
         try {
-            Thread.sleep(100);
+            Thread.sleep(500);
         }
         catch (Exception e){
             System.out.println(e);

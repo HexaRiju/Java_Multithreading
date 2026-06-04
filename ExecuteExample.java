@@ -33,7 +33,7 @@ public class ExecuteExample {
 
 //==============================================================================
         // now we do not do this too mach things
-        // here them main thread is waiting for the threads to complete it's service ,
+        // here the main thread is waiting for the threads to complete it's service ,
         // but we can do it very smart and easy way using countDownLatch.
 //        future1.get();
 //        future2.get();

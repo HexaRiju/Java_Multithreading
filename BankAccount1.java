@@ -28,8 +28,8 @@ public class BankAccount1 {
                 catch (InterruptedException e){
                     System.out.println(e);
                     Thread.currentThread().interrupt();// this is a good practice nothing else
-                    // u are just storing that if any interrupt come it will store that state
-                    // such that , is any maintanence code is there will run
+                    // You are just storing that if any interrupt come it will store that state
+                    // such that , if any maintenance code is there will run
                 }
                 finally {
                     lock.unlock();
@@ -42,7 +42,7 @@ public class BankAccount1 {
         catch (InterruptedException e){
             System.out.println(e);
         }
-        if(Thread.currentThread().isInterrupted()){// maintanence code
+        if(Thread.currentThread().isInterrupted()){// maintenance code
             System.out.println(" ....");
         }
     }

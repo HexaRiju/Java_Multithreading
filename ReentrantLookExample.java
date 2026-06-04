@@ -32,7 +32,7 @@ public class ReentrantLookExample {
 }
 // here basically you think that deadlock will occure , and you are right
 // but to handle this in jvm , it maintains a counter of lock , mean each pair of lock have their unlock methode
-// what is happening hare, same thread (here the main thread) holding both the lock so the inner methode can take the lock
+// what is happening here, same thread (here the main thread) holding both the lock so the inner methode can take the lock
 // there are two lock so the counter will also be 2
 // when unlock happen the counter will dicrement to 0.
 //<for total colncept watch lec no.8>

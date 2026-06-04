@@ -16,7 +16,14 @@ public class LambdaExpression {
         Hello hello = (name) -> name + " Engineering Student";
         LambdaExpression lambdaExpression = new LambdaExpression();
 
-        lambdaExpression.Number(3);
+        lambdaExpression.Number((a) ->{
+            int fac = 1;
+            for(int i = 1 ; i <= a ; i++){
+                fac *=i;
+            }
+            System.out.print(a+" ");
+            return fac;
+        });
         lambdaExpression.Info(12,hello.Name(n));
 
         //=====================================================
@@ -44,14 +51,7 @@ public class LambdaExpression {
     }// multipal statement
 
 
-    public void Number(int n){
-        Action action = (num) ->{
-            int fac = 1;
-            for(int i = 1 ; i <= num ; i++){
-                fac *=i;
-            }
-            return fac;
-        };
-        System.out.println("the factorial of the number " + n +" -- " + action.done(n));
+    public void Number(Action action){
+        System.out.println("the factorial of the number "+" -- " + action.done(3));
     }
 }
